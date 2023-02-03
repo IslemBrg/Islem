@@ -9,6 +9,7 @@ export default function NavBar() {
   const [isMobile, setisMobile] = useState(false);
   const [SideBar, setSideBar] = useState(false)
 
+  
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 760) {
