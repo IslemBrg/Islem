@@ -4,8 +4,10 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
+  
   return (
     <div className={styles.body}>
       <div>
@@ -26,6 +28,18 @@ export default function Home() {
           >
             <h2 className={styles.description}>Done by Me, Islem Bargaoui (Retr0)</h2>
           </motion.div>
+          <div id="text" style={{fontSize:30,marginTop:100,display: "flex",flexDirection:"column", justifyContent: "space-around", alignItems: "center"}}>
+          <h3>Website built using</h3>
+          <Typewriter
+            options={{
+              strings: ['Next.Js','Tailwindcss','Node.js'],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 10,
+              delay:30
+            }}
+          />
+          </div>
         </AnimatePresence>
       </div>
     </div>
