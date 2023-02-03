@@ -34,3 +34,9 @@
   z-index: -1;
   overflow-x: hidden;
 }
+
+.errorMessage{
+  border-radius: 20px;
+  border: 1px solid red;
+  color: red;
+}

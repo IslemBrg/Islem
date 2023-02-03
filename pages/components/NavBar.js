@@ -20,7 +20,7 @@ export default function NavBar() {
   }, []);
   return (
     <>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossOrigin='anonymous'></script>
     {isMobile ? (
     <div style={{display:"flex"}}>
       {SideBar ? (<div style={{display:"flex"}}>
