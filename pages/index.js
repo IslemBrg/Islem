@@ -28,6 +28,12 @@ export default function Home() {
           >
             <h2 className={styles.description}>Done by Me, Islem Bargaoui (Retr0)</h2>
           </motion.div>
+          <motion.div
+            initial={{ y: -50, opacity:0}}
+            animate={{ y: 0, opacity:1 }}
+            exit={{ y: -50, opacity:0 }}
+            transition={{ duration: 0.5 ,delay: 1}}
+          >
           <div id="text" style={{fontSize:30,marginTop:100,display: "flex",flexDirection:"column", justifyContent: "space-around", alignItems: "center"}}>
           <h3>Website built using</h3>
           <Typewriter
@@ -40,6 +46,7 @@ export default function Home() {
             }}
           />
           </div>
+          </motion.div>
         </AnimatePresence>
       </div>
     </div>
